@@ -3,7 +3,13 @@ body{
     
 }
 #pp{
+
     height: 300px;
     width: 300px;
     border-radius: 50%;
+    
+}
+#tite{
+  text-align: center;
+
 }
