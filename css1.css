@@ -1,4 +1,9 @@
 body{
-    background-color: aquamarine;
-    color:rgb(23, 92, 222) ;
+    background-color: beige;
+    
+}
+#pp{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
 }
