@@ -1,0 +1,22 @@
+body{
+    text-align:left;
+    background-color: blanchedalmond;
+}
+div {
+    width: 500px;
+    border: 1px solid rgb(51, 100, 236);
+    padding: 0px 25px 25px 0px;
+    background-color: lightblue;
+    margin: 15px;
+    border-radius: 5%;
+  }
+  h1{
+    padding: 20px 0px 0px 0px;
+  }
+  #submit:hover{
+    text-decoration: underline;
+  }
+  *{
+   
+ text-align: center;
+  }

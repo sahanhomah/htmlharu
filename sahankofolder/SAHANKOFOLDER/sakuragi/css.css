@@ -1,0 +1,45 @@
+
+.pic
+{
+    display: flex;
+    
+    margin: 10;
+    border: 2px solid black;
+    border-radius: 50%;
+    
+}
+body{
+    background-color: bisque;
+}
+
+#container{
+    display: block;
+    font-size: large;
+    margin-left: 5%;
+    flex-direction: row;
+}
+#name{
+ 
+}
+#description{
+   
+}
+#seeMore{
+    
+}
+#gifcontainer{
+    display: flex;
+    
+    
+}
+.gifharu{
+    margin: 5%;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.b1:hover {
+        background-color: #04AA6D;
+        color: white;
+      }
