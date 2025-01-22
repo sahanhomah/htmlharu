@@ -21,3 +21,12 @@ text-align: center;
 #she{
     text-transform: capitalize;
 }
+*{
+    font-family: 'Times New Roman';
+}
+#outer{
+    font-size: 25px;
+}
+/* #inner{
+    font-size: 10px;
+} */
