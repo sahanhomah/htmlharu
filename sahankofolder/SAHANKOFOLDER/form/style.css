@@ -1,0 +1,20 @@
+body{
+  background: linear-gradient(90deg, #fadfd5,   #fadfd5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+form {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255,143,170,1) , rgba(237,88,88,1));
+
+width :250px;
+height: 300px;
+  border: 5px solid black;
+  padding: 50px;
+ border-radius: 19%;
+
+box-shadow: 5px 6px 7px rgba(144, 140, 140,0.9);
+}
