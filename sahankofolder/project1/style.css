@@ -41,7 +41,7 @@ font-size: 12px;
     
     margin: 0px 0px 10px 100px;
 }
-a{
+#a{
     color: #0095f6;
     text-decoration: none;
 }
@@ -58,7 +58,7 @@ a{
 }
 #mobile{
     height: 600px;
-    margin-bottom: -40px;
+    margin-bottom: 0px;
     margin-left: 400px;
     margin-right: 100px;
 }
@@ -67,9 +67,11 @@ div{
 }
 #signup{margin-top: 40px;
     padding-left: 90px;
+    padding-top: 15px;
     width: 260px;
+    height: 40px;
     border: 1px solid rgb(149, 149, 149) ;
-    color: aliceblue;
+    color: rgb(255, 240, 240);
 }
 #google{
     margin-top: 10px;
@@ -85,3 +87,48 @@ div{
     color: aliceblue;
     text-align: center;
 }
+#last{
+    margin-right: 10px;
+    color: rgb(150, 150, 150);
+    text-align: center;
+    text-decoration: none;
+
+}
+#first{
+    padding-top: 500px;
+    margin-left: 350px;
+    margin-right: 5px;
+    color: rgb(150, 150, 150);
+    text-align: center;
+    text-decoration: none;
+}
+#last:hover {
+    
+   text-decoration: underline;
+  }
+  #l{
+    margin-bottom: 20px;
+  }
+  #sign
+  {
+    color: #0095f6;
+    text-decoration: none;
+  }
+  #fa{
+    text-decoration: none;
+    color: #0095f6;
+  }
+  #language{
+    border: #000000;
+    margin-top: -200px;
+    margin-left: 700px;
+    color: rgb(190, 190, 190);
+    margin-bottom:50px;
+    ;
+  }
+  #non{
+    color: #8b8b8b;
+  }
+  #lastt{
+    display: inline;
+  }
