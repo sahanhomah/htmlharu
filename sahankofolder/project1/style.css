@@ -1,0 +1,23 @@
+*{
+    background-color: black;
+}
+h1{
+    text-align: center;
+
+    width:245px;
+    height:75px;
+}
+input{
+    width: 250px;
+    height: 45px;
+}
+#loginbutton{
+    background-color: #0095f6;
+    color: aliceblue;
+}
+#instagram{
+    height :408px;
+    width: 350px;
+    border: 1px solid rgb(149, 149, 149) ;
+    margin: 42px 0px 0px 800px;
+} 
