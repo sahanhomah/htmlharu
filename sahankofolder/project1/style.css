@@ -9,6 +9,7 @@ padding-left: 50px;
     height:75px;
 }
 input{ 
+    color: aliceblue;
     display: flex;
 align-items: center;
 justify-content: center;
@@ -29,9 +30,9 @@ justify-content: center;
     height :408px;
     width: 350px;
     border: 1px solid rgb(149, 149, 149) ;
-    margin: 42px 0px 0px 0px;
+    margin-top: 100px;
 } 
-p{
+#or{
     color: rgb(228, 228, 228);
     text-align: center;
 font-size: 12px;
@@ -56,9 +57,31 @@ a{
 
 }
 #mobile{
+    height: 600px;
+    margin-bottom: -40px;
+    margin-left: 400px;
+    margin-right: 100px;
+}
+div{
+    display: inline-block;
+}
+#signup{margin-top: 40px;
+    padding-left: 90px;
+    width: 260px;
+    border: 1px solid rgb(149, 149, 149) ;
+    color: aliceblue;
+}
+#google{
+    margin-top: 10px;
+    margin-left: 30px;
     height: 50px;
 }
-#photo1{
-    display: inline-block;
-
+#microsoft{
+    height: 50px;
+   
+}
+#app{
+    font-size: 16px;
+    color: aliceblue;
+    text-align: center;
 }
