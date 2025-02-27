@@ -6,9 +6,16 @@
 // {
 //     console.log(i);
 // }
-let right=4;
-let user=prompt("guess the number");
-while(user!=4){
-    user=prompt("wrong so guess again");
+// let right=4;
+// let user=prompt("guess the number");
+// while(user!=4){
+//     user=prompt("wrong so guess again");
+// }
+// console.log("you guessed it right");
+let obj={
+    name :'hera',
+    age : 99
+
 }
-console.log("you guessed it right");
+let output=`guy named ${obj.name} is of age \t\t ${obj.age}`;
+console.log(output);
