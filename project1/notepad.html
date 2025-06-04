@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Notepad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    textarea {
+      width: 80%;
+      height: 300px;
+      padding: 10px;
+      font-size: 16px;
+      resize: none;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #saveBtn { background-color: #4CAF50; color: white; }
+    #clearBtn { background-color: #f44336; color: white; }
+  </style>
+</head>
+<body>
+
+  <h2>Simple Notepad</h2>
+  <textarea id="noteArea" placeholder="Type your notes here..."></textarea>
+  <div>
+    <button id="saveBtn">Save</button>
+    <button id="clearBtn">Clear</button>
+  </div>
+
+  <script>
+    const noteArea = document.getElementById("noteArea");
+    const saveBtn = document.getElementById("saveBtn");
+    const clearBtn = document.getElementById("clearBtn");
+
+    // Load saved note on page load
+    window.onload = function () {
+      const savedNote = localStorage.getItem("notepad");
+      if (savedNote) noteArea.value = savedNote;
+    };
+
+    // Save note to local storage
+    saveBtn.onclick = function () {
+      localStorage.setItem("notepad", noteArea.value);
+      alert("Note saved!");
+    };
+
+    // Clear note and storage
+    clearBtn.onclick = function () {
+      noteArea.value = "";
+      localStorage.removeItem("notepad");
+    };
+  </script>
+
+</body>
+</html>
