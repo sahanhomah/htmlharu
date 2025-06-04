@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Analog Clock</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+
+    .clock {
+      width: 300px;
+      height: 300px;
+      border: 10px solid #333;
+      border-radius: 50%;
+      position: relative;
+      background: white;
+    }
+
+    .hand {
+      position: absolute;
+      width: 50%;
+      height: 4px;
+      background: black;
+      top: 50%;
+      left: 50%;
+      transform-origin: 0% 50%;
+      transform: rotate(90deg);
+      transition: all 0.05s ease-in-out;
+    }
+
+    .hour { width: 30%; height: 6px; background: #000; }
+    .minute { width: 40%; height: 4px; background: #666; }
+    .second { width: 45%; height: 2px; background: red; }
+  </style>
+</head>
+<body>
+
+<div class="clock">
+  <div class="hand hour" id="hour-hand"></div>
+  <div class="hand minute" id="minute-hand"></div>
+  <div class="hand second" id="second-hand"></div>
+</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const nepalTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Kathmandu' }));
+    const sec = now.getSeconds();
+    const min = now.getMinutes();
+    const hr = now.getHours();
+
+    document.getElementById('second-hand').style.transform = `rotate(${sec * 6}deg)`;
+    document.getElementById('minute-hand').style.transform = `rotate(${min * 6}deg)`;
+    document.getElementById('hour-hand').style.transform = `rotate(${(hr % 12) * 30 + min * 0.5}deg)`;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock(); 
+</script>
+
+</body>
+</html>
