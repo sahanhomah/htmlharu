@@ -16,3 +16,9 @@ background-image: url('background.jpg'); background-size: cover; background-repe
   
 margin-top:1px;
 }
+  .icon:hover{
+            display: block;
+            height: 78.4px;
+            width: 52px;
+            background-color: rgba(18, 144, 216, 0.192);
+        }
