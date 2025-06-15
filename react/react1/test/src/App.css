@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+.daraz-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ff5e00;
+  border-radius: 10px;
+  background-color: #fff8f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.title {
+  color: #ff5e00;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.nav-list {
+  text-decoration: none;
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: left;
+}
+
+.nav-list li {
+  margin: 8px 0;
+  font-weight: 500;
+}
+a{
+  color: rgb(242, 108, 25);
+  text-decoration: none;
+}
