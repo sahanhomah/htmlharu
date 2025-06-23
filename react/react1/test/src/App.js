@@ -1,6 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-
+const isAdmin=false;
+const isLoading=false;
+const Loader=()=>{
+  return(
+ <div className="spinner"></div>
+  )
+};
 const Daraz = () => {
   return (
     <div className="daraz-container" style={{}}>
@@ -18,11 +24,15 @@ const Daraz = () => {
 }
 function App() {
   return (
-    
-    <div className="App">
-     
    
-   <Daraz/>
+    <div className="App">
+       {
+   isAdmin? <h1>YO admin ho</h1>: <h1>yo admin haina</h1>
+      } 
+     {
+      isLoading? <Loader/>:<Daraz/>
+     }
+     
     </div>
 
 );
