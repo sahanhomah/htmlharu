@@ -1,52 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
-import {useState} from 'react';
-var count=0;
-const AddButton = () => {
-const [number, setCount]=useState(0);
-const onIClick=()=>{
-setCount(number+1);
-}
-return(
+import { useState } from 'react';
 
-  <button class="btn" onClick={onIClick}>Increase {number}</button> 
-)
-}
-const DecreaseButton = () => {
-const [count, setCount]=useState(0);
-const onDClick=()=>{
-setCount(count-1);
-}
-return(
+// AddButton receives props
+const AddButton = ({ count, setCount }) => {
+  const onIClick = () => {
+    setCount(count + 1);
+  };
 
-  <button class="btn" onClick={onDClick}>Decrease {count}</button> 
-)
-}
+  return <button className="btn" onClick={onIClick}>Increase</button>;
+};
+
+// DecreaseButton receives props
+const DecreaseButton = ({ count, setCount }) => {
+  const onDClick = () => {
+    setCount(count - 1);
+  };
+
+  return <button className="btn" onClick={onDClick}>Decrease</button>;
+};
+
 function App() {
-const[value,setValue]=useState();
+  const [count, setCount] = useState(0);
 
-    const increaseNumber = () =>{
-    count=count+1;
-        setValue(count);
-      
-    };
-      const decreaseNumber = () =>{
-       count=count-1;
-        setValue(count);
-    };
+  const increaseNumber = () => {
+    setCount(count + 1);
+  };
+
+  const decreaseNumber = () => {
+    setCount(count - 1);
+  };
+
   return (
-  
-  <>
-<button class="btn" onClick={increaseNumber}>Increment</button>
-<button class="btn" onClick={decreaseNumber}>Decrement</button>
-<br></br>
-
-the value is {value}
-<br></br>
-<AddButton/>
-<DecreaseButton/>
-
-  </>)
+    <>
+      <button className="btn" onClick={increaseNumber}>Increment</button>
+      <button className="btn" onClick={decreaseNumber}>Decrement</button>
+      <br />
+      The value is {count}
+      <br />
+      <AddButton count={count} setCount={setCount} />
+      <DecreaseButton count={count} setCount={setCount} />
+    </>
+  );
 }
 
 export default App;
